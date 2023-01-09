@@ -1,8 +1,8 @@
 function convertir() {
     let valore = parseInt(document.getElementById("valor").value);
     let resultado = 0;
-    let dolar = 185;
-    let euro = 193;
+    let dolar = 185;/*ACTUALIZAR DOLAR*/
+    let euro = 193;/*ACTUALIZAR EURO*/
     if (document.getElementById("uno").checked) {
         resultado = valore / dolar;
         alert("El cambio de Pesos a Dolares es: US$ " + resultado.toFixed(2));
@@ -15,3 +15,4 @@ function convertir() {
         alert("Por favor, selecciona un tipo de cambio. ")
     }
 }
+console.log(resultado)
