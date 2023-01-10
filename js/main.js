@@ -15,4 +15,20 @@ function convertir() {
         alert("Por favor, selecciona un tipo de cambio. ")
     }
 }
-console.log(resultado)
+
+
+let diaDeLaSemana = Number(prompt("Seleccione Nacionalidad: 1.Argentinx - 2.Brasilerx - 3.Uruguayx"));
+switch (diaDeLaSemana) {
+    case 1:
+        alert("Ha seleccionado la opcion para pagar mas impuestos");
+        break;
+    case 2:
+        alert("Parabéns, você não tem impostos");
+        break;
+    case 3:
+        alert("Felicitaciones Vo, no tenes tantos impuestos");
+        break;
+    default:
+        alert("me quede corto con los paises, perdon");
+        break;
+}
