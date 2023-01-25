@@ -19,8 +19,13 @@ switch (nacionalidades) {
 }
 /*---------------------------------------------*/
 /*SELECCIONAR TRANSACCION*/
-let transaccion = [1,2,3,4,];
-transaccion.push(5)
+let blues = [{
+    nombre: "Dolar Blue", valor: 381
+}, {
+    nombre: "Real Blue", valor: 76
+}, {
+    nombre: "Peso Uruguayo", valor: 9
+}]
 /*---------------------------------------------*/
 /*FUNCION PARA CONVERTIR MONEDA*/
 let convertir = function () {
@@ -68,3 +73,4 @@ let convertir = function () {
     console.log("Ha ingresado" + " " + moneda + " " + "pesos argentinos")
 }
 /*---------------------------------------------*/
+console.log(blues)
