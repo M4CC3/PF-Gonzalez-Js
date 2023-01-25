@@ -44,23 +44,22 @@ let convertir = function () {
     let moneda = parseInt(document.getElementById("valor").value);
     let resultado = 0;
 
-        /*CONSTRUCTOR*/
-    function Monedas(nombre, valor, origen, simbolo){
-        this.nombre = nombre;
-        this.valor = valor;
-        this.origen = origen;
-        this.simbolo = simbolo;
-
-
+    /*CONSTRUCTOR*/
+    class Monedas {
+        constructor(nombre, valor, origen, simbolo) {
+            this.nombre = nombre;
+            this.valor = valor;
+            this.origen = origen;
+            this.simbolo = simbolo;
+        }
     }
+
     /*DOLAR OFICIAL*/
-    let moneda1 = new Monedas ("Dolar", 185, "Estados Unidos", "US$");
-
+    let moneda1 = new Monedas("Dolar", 185, "Estados Unidos", "US$");
     /*REAL OFICIAL*/
-    let moneda2 = new Monedas ("Real", 34, "Brasil", "R$");
-
+    let moneda2 = new Monedas("Real", 34, "Brasil", "R$");
     /*PESO URUGUAYO OFICIAL*/
-    let moneda3 = new Monedas ("Peso Uruguayo", 4.71, "Uruguay", "N$")
+    let moneda3 = new Monedas("Peso Uruguayo", 4.71, "Uruguay", "N$")
 
 
     /*CAMBIO A DOLARES*/
