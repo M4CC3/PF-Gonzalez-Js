@@ -1,5 +1,5 @@
 /*SELECCION DE NACIONALIDAD*/
-let nacionalidades = Number(prompt("Seleccione Nacionalidad: 1.Argentinx - 2.Brasilerx - 3.Uruguayx"));
+let nacionalidades = Number(prompt("Seleccione Nacionalidad: 1.Argentinx, - 2.Brasilerx - 3.Uruguayx"));
 switch (nacionalidades) {
     /*NACIONALIDAD ARGENTINA*/
     case 1:
@@ -17,7 +17,10 @@ switch (nacionalidades) {
     default:
         alert("me quede corto con los paises, perdon");
 }
-
+/*---------------------------------------------*/
+/*SELECCIONAR TRANSACCION*/
+let transaccion = [1,2,3,4,];
+transaccion.push(5)
 /*---------------------------------------------*/
 /*FUNCION PARA CONVERTIR MONEDA*/
 let convertir = function () {
@@ -64,8 +67,4 @@ let convertir = function () {
     /*CONSERVAR EL VALOR DE PESOS INGRESADOS*/
     console.log("Ha ingresado" + " " + moneda + " " + "pesos argentinos")
 }
-/*---------------------------------------------*/
-
-
-//console.log(moneda1.valor)
 /*---------------------------------------------*/
