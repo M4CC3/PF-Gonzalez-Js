@@ -1,23 +1,3 @@
-class Producto {
-    constructor(descripcion, precio, precioConversion) {
-        this.descripcion = descripcion.toUpperCase();
-        this.precio = parseFloat(precio);
-        this.precioConversion = precioConversion;
-        this.retencion = 0;
-        this.impuesto = 0;
-        this.totalImpuesto = 0;
-    }
-    retenciones() {
-        this.retencion = this.precioConversion * valorRetencion;
-    }
-    impuestoPais() {
-        this.impuesto = this.precioConversion * valorImpuesto;
-    }
-    valorConImpuestos() {
-        this.totalImpuesto = this.precioConversion + this.retencion + this.impuesto;
-    }
-}
-
 /*SELECCION DE NACIONALIDAD*/
 let nacionalidades = Number(prompt("Seleccione Nacionalidad: 1.Argentinx - 2.Brasilerx - 3.Uruguayx"));
 switch (nacionalidades) {
