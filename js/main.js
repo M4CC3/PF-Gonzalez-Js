@@ -20,11 +20,11 @@ switch (nacionalidades) {
 /*---------------------------------------------*/
 /*SELECCIONAR TRANSACCION*/
 let blues = [{
-    nombre: "Dolar Blue", valor: 381
+    nombreM: "Dolar Blue", valor: 381
 }, {
-    nombre: "Real Blue", valor: 76
+    nombreM: "Real Blue", valor: 76
 }, {
-    nombre: "Peso Uruguayo", valor: 9
+    nombreM: "Peso Uruguayo", valor: 9
 }]
 /*---------------------------------------------*/
 /*FUNCION PARA CONVERTIR MONEDA*/
@@ -41,29 +41,30 @@ let convertir = function () {
             this.simbolo = simbolo;
         }
     }
-
+    /*---------------------------------------------*/
     /*DOLAR OFICIAL*/
-    let moneda1 = new Monedas("Dolar", 185, "Estados Unidos", "US$");
+    let moneda1 = new Monedas("Dolar", 381, "Estados Unidos", "US$");
     /*REAL OFICIAL*/
-    let moneda2 = new Monedas("Real", 34, "Brasil", "R$");
+    let moneda2 = new Monedas("Real", 76, "Brasil", "R$");
     /*PESO URUGUAYO OFICIAL*/
-    let moneda3 = new Monedas("Peso Uruguayo", 4.71, "Uruguay", "N$")
-
-
+    let moneda3 = new Monedas("Peso Uruguayo", 9, "Uruguay", "N$")
+    /*---------------------------------------------*/
     /*CAMBIO A DOLARES*/
     if (document.getElementById("uno").checked) {
         resultado = moneda / moneda1.valor;
-        alert("Con el cambio oficial serian: US$ " + resultado.toFixed(2) + " " + "Dolares");
+        alert("Al valor blue serian: US$ " + resultado.toFixed(2) + " " + "Dolares");
+        blues.forEach(( _nombreM ) => console.log("El usuario eligio el"+" "+ blues.nombreM));
     }
+    
     /*CAMBIO A REALES*/
     else if (document.getElementById("dos").checked) {
         resultado = moneda / moneda2.valor;
-        alert("Con el cambio oficial serian: R$ " + resultado.toFixed(2) + " " + "Reales")
+        alert("Al valor blue serian: R$ " + resultado.toFixed(2) + " " + "Reales")
     }
     /*CAMBIO A PESOS URUGUAYOS*/
     else if (document.getElementById("tres").checked) {
         resultado = moneda / moneda3.valor;
-        alert("Con el cambio oficial serian: N$ " + resultado.toFixed(2) + " " + "Pesos Uruguayos")
+        alert("Al valor blue serian: N$ " + resultado.toFixed(2) + " " + "Pesos Uruguayos")
     }
     /*SINO INGRESA TIPO DE DIVISA*/
     else {
@@ -73,4 +74,4 @@ let convertir = function () {
     console.log("Ha ingresado" + " " + moneda + " " + "pesos argentinos")
 }
 /*---------------------------------------------*/
-console.log(blues)
+/*console.log(blues)*/
