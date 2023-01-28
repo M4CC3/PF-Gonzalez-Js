@@ -76,4 +76,4 @@ let convertir = function () {
     console.log("Y ha ingresado para convertir:" + " " + moneda + " " + "pesos argentinos")
 }
 /*---------------------------------------------*/
-/*console.log(blues)*/
+
