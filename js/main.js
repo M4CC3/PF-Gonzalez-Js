@@ -20,7 +20,7 @@ switch (nacionalidades) {
 /*---------------------------------------------*/
 /*SELECCIONAR TRANSACCION*/
 let blues = [{
-    nombreM: "Dolar Blue", valorM: 381
+    nombreM: "Dolar Blue", valorM: 384
 }, {
     nombreM: "Real Blue", valorM: 76
 }, {
@@ -43,7 +43,7 @@ let convertir = function () {
     }
     /*---------------------------------------------*/
     /*DOLAR OFICIAL*/
-    let moneda1 = new Monedas("Dolar", 381, "Estados Unidos", "US$");
+    let moneda1 = new Monedas("Dolar", 384, "Estados Unidos", "US$");
     /*REAL OFICIAL*/
     let moneda2 = new Monedas("Real", 76, "Brasil", "R$");
     /*PESO URUGUAYO OFICIAL*/
