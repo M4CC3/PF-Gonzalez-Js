@@ -20,11 +20,11 @@ switch (nacionalidades) {
 /*---------------------------------------------*/
 /*SELECCIONAR TRANSACCION*/
 let blues = [{
-    nombreM: "Dolar Blue", valor: 381
+    nombreM: "Dolar Blue", valorM: 381
 }, {
-    nombreM: "Real Blue", valor: 76
+    nombreM: "Real Blue", valorM: 76
 }, {
-    nombreM: "Peso Uruguayo", valor: 9
+    nombreM: "Peso Uruguayo", valorM: 9
 }]
 /*---------------------------------------------*/
 /*FUNCION PARA CONVERTIR MONEDA*/
@@ -53,25 +53,27 @@ let convertir = function () {
     if (document.getElementById("uno").checked) {
         resultado = moneda / moneda1.valor;
         alert("Al valor blue serian: US$ " + resultado.toFixed(2) + " " + "Dolares");
-        blues.forEach(( _nombreM ) => console.log("El usuario eligio el"+" "+ blues.nombreM));
+        blues.forEach(( _nombreM ) =>console.log("El usuario selecciono el "+blues[0].nombreM));
     }
     
     /*CAMBIO A REALES*/
     else if (document.getElementById("dos").checked) {
         resultado = moneda / moneda2.valor;
-        alert("Al valor blue serian: R$ " + resultado.toFixed(2) + " " + "Reales")
+        alert("Al valor blue serian: R$ " + resultado.toFixed(2) + " " + "Reales");
+        blues.forEach(( _nombreM ) =>console.log("El usuario selecciono el "+blues[1].nombreM));
     }
     /*CAMBIO A PESOS URUGUAYOS*/
     else if (document.getElementById("tres").checked) {
         resultado = moneda / moneda3.valor;
-        alert("Al valor blue serian: N$ " + resultado.toFixed(2) + " " + "Pesos Uruguayos")
+        alert("Al valor blue serian: N$ " + resultado.toFixed(2) + " " + "Pesos Uruguayos");
+        blues.forEach(( _nombreM ) =>console.log("El usuario selecciono el "+blues[2].nombreM));
     }
     /*SINO INGRESA TIPO DE DIVISA*/
     else {
         alert("Por favor, selecciona un tipo de cambio. ");
     }
     /*CONSERVAR EL VALOR DE PESOS INGRESADOS*/
-    console.log("Ha ingresado" + " " + moneda + " " + "pesos argentinos")
+    console.log("Y ha ingresado para convertir:" + " " + moneda + " " + "pesos argentinos")
 }
 /*---------------------------------------------*/
 /*console.log(blues)*/
