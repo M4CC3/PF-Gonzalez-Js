@@ -62,35 +62,70 @@ let convertir = function () {
     /*PESO URUGUAYO OFICIAL*/
     let moneda3 = new Monedas("Peso Uruguayo", 9, "Uruguay", "N$")
     /*---------------------------------------------*/
-    /*ARGENTINX CAMBIA A DOLARES*/
+    /*ARGEN=DOLARES*/
     if (document.getElementById("one").checked && document.getElementById("uno").checked) {
         resultado = moneda / moneda1.valor;
-        devolucion.innerText = ("Al valor blue serian: US$" + resultado.toFixed(2) + " " + "Dolares");
+        devolucion.innerText = ("Son: US$" + resultado.toFixed(2) + " " + "Dolares");
         blues.forEach((_nombreM) => console.log("Es Argentinx. Ha ingresado: $" + moneda + " Pesos Argentinos. " + "Elige cambiar a " + blues[0].nombreM + " y el total es: US$" + resultado.toFixed(2) + " " + "Dolares"));
     }
     /*--------------*/
-    /*ARGENTINX CAMBIA A DOLARES*/
-    if (document.getElementById("one").checked && document.getElementById("dos").checked) {
-        resultado = moneda / moneda1.valor;
-        devolucion.innerText = ("Al valor blue serian: US$" + resultado.toFixed(2) + " " + "Dolares");
-        blues.forEach((_nombreM) => console.log("Es Argentinx. Ha ingresado: $" + moneda + " Pesos Argentinos. " + "Elige cambiar a " + blues[0].nombreM + " y el total es: US$" + resultado.toFixed(2) + " " + "Dolares"));
-    }
-    /*--------------*/
-    /*CAMBIO A REALES*/
-    else if (document.getElementById("dos").checked) {
+    /*ARGEN=REALES*/
+    else if (document.getElementById("one").checked && document.getElementById("dos").checked) {
         resultado = moneda / moneda2.valor;
-        devolucion.innerText = ("Al valor blue serian: R$" + resultado.toFixed(2) + " " + "Reales");
-        blues.forEach((_nombreM) => console.log("Ha ingresado: $" + moneda + " Pesos Argentinos. " + "Elige cambiar a " + blues[1].nombreM + " y el total es: R$" + resultado.toFixed(2) + " " + "Reales"));
+        devolucion.innerText = ("Son: R$" + resultado.toFixed(2) + " " + "Reales");
+        blues.forEach((_nombreM) => console.log("Es Argentinx. Ha ingresado: $" + moneda + " Pesos Argentinos. " + "Elige cambiar a " + blues[1].nombreM + " y el total es: R$" + resultado.toFixed(2) + " " + "Reales"));
     }
     /*--------------*/
-    /*CAMBIO A PESOS URUGUAYOS*/
-    else if (document.getElementById("tres").checked) {
+    /*ARGEN=PESOS URUGUAYOS*/
+    else if (document.getElementById("one").checked && document.getElementById("tres").checked) {
         resultado = moneda / moneda3.valor;
-        devolucion.innerText = ("Al valor blue serian: N$ " + resultado.toFixed(2) + " " + "Pesos Uruguayos");
-        blues.forEach((_nombreM) => console.log("Ha ingresado: $" + moneda + " Pesos Argentinos. " + "Elige cambiar a " + blues[2].nombreM + " y el total es: N$" + resultado.toFixed(2) + " " + "Pesos Uruguayos"))
+        devolucion.innerText = ("Son: N$" + resultado.toFixed(2) + " " + "Pesos Uruguayos");
+        blues.forEach((_nombreM) => console.log("Es Argentinx. Ha ingresado: $" + moneda + " Pesos Argentinos. " + "Elige cambiar a " + blues[2].nombreM + " y el total es: N$" + resultado.toFixed(2) + " " + "Pesos Uruguayos"));
     }
     /*--------------*/
-    /*NO INGRESA TIPO DE DIVISA*/
+    /*BRASILEÑX=DOLARES*/
+    else if (document.getElementById("two").checked && document.getElementById("uno").checked) {
+        resultado = moneda / moneda1.valor;
+        devolucion.innerText = ("Os resultados da troca são: US$" + resultado.toFixed(2) + " " + "Dolares");
+        blues.forEach((_nombreM) => console.log("Es Brasileñx. Ha ingresado: $" + moneda + " Pesos Argentinos. " + "Elige cambiar a " + blues[0].nombreM + " y el total es: US$" + resultado.toFixed(2) + " " + "Dolares"));
+    }
+    /*--------------*/
+    /*BRASILEÑX=REALES*/
+    else if (document.getElementById("two").checked && document.getElementById("dos").checked) {
+        resultado = moneda / moneda2.valor;
+        devolucion.innerText = ("Os resultados da troca são: R$" + resultado.toFixed(2) + " " + "Reales");
+        blues.forEach((_nombreM) => console.log("Es Brasileñx. Ha ingresado: $" + moneda + " Pesos Argentinos. " + "Elige cambiar a " + blues[1].nombreM + " y el total es: R$" + resultado.toFixed(2) + " " + "Reales"));
+    }
+    /*--------------*/
+    /*BRASILEÑX=PESOS URUGUAYOS*/
+    else if (document.getElementById("two").checked && document.getElementById("tres").checked) {
+        resultado = moneda / moneda3.valor;
+        devolucion.innerText = ("Os resultados da troca são: N$" + resultado.toFixed(2) + " " + "Pesos Uruguaios");
+        blues.forEach((_nombreM) => console.log("Es Brasileñx. Ha ingresado: $" + moneda + " Pesos Argentinos. " + "Elige cambiar a " + blues[2].nombreM + " y el total es: N$" + resultado.toFixed(2) + " " + "Pesos Uruguayos"));
+    }
+    /*--------------*/
+    /*URUGUAYX=DOLARES*/
+    else if (document.getElementById("three").checked && document.getElementById("uno").checked) {
+        resultado = moneda / moneda1.valor;
+        devolucion.innerText = ("Son: US$" + resultado.toFixed(2) + " " + "Dolares");
+        blues.forEach((_nombreM) => console.log("Es Uruguayx. Ha ingresado: $" + moneda + " Pesos Argentinos. " + "Elige cambiar a " + blues[0].nombreM + " y el total es: US$" + resultado.toFixed(2) + " " + "Dolares"));
+    }
+    /*--------------*/
+    /*URUGUAYX=REALES*/
+    else if (document.getElementById("three").checked && document.getElementById("dos").checked) {
+        resultado = moneda / moneda2.valor;
+        devolucion.innerText = ("Son: R$" + resultado.toFixed(2) + " " + "Reales");
+        blues.forEach((_nombreM) => console.log("Es Uruguayx. Ha ingresado: $" + moneda + " Pesos Argentinos. " + "Elige cambiar a " + blues[1].nombreM + " y el total es: R$" + resultado.toFixed(2) + " " + "Reales"));
+    }
+    /*--------------*/
+    /*URUGUAYX=PESOS URUGUAYOS*/
+    else if (document.getElementById("three").checked && document.getElementById("tres").checked) {
+        resultado = moneda / moneda3.valor;
+        devolucion.innerText = ("Son: N$" + resultado.toFixed(2) + " " + "Pesos Uruguayos");
+        blues.forEach((_nombreM) => console.log("Es Uruguayx. Ha ingresado: $" + moneda + " Pesos Argentinos. " + "Elige cambiar a " + blues[2].nombreM + " y el total es: N$" + resultado.toFixed(2) + " " + "Pesos Uruguayos"));
+    }
+    /*--------------*/
+    /*NO INGRESA NACIONALIDAD O TIPO DE DIVISA*/
     else {
         devolucion.innerText = ("Por favor, selecciona Nacionalidad y un tipo de cambio. ");
     }
