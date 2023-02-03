@@ -22,6 +22,22 @@
 //        alert("me quede corto con los paises, perdon");
 //}
 /*---------------------------------------------*/
+
+Swal.fire({
+    title: 'Bienvenido!',
+    text: 'Acepta aprobar esta entrega?',
+    confirmButtonText: 'Aceptar',
+    confirmButtonColor:'#3F72AF',
+    background:'#DBE2EF',
+    allowOutsideClick: false,
+    allowEscapeKey: false,
+
+
+
+});
+
+
+/*---------------------------------------------*/
 /* CLASS CONSTRUCTOR*/
 class Monedas {
     constructor(nombre, valor, origen, simbolo) {
@@ -131,3 +147,4 @@ let convertir = function () {
     }
 }
 /*---------------------------------------------*/
+
