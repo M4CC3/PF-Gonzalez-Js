@@ -43,6 +43,7 @@ colorFondoButton.addEventListener("click", cambiaFondo);
 function cambiaFondo() {
     body.classList.toggle("bg-dark");
     body.classList.toggle("text-white");
+
 }
 //cambiar-fondo
 
