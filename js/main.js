@@ -22,22 +22,6 @@
 //        alert("me quede corto con los paises, perdon");
 //}
 /*---------------------------------------------*/
-
-Swal.fire({
-    title: 'Bienvenido!',
-    text: 'Acepta aprobar esta entrega?',
-    confirmButtonText: 'Aceptar',
-    confirmButtonColor:'#3F72AF',
-    background:'#DBE2EF',
-    allowOutsideClick: false,
-    allowEscapeKey: false,
-
-
-
-});
-
-
-/*---------------------------------------------*/
 /* CLASS CONSTRUCTOR*/
 class Monedas {
     constructor(nombre, valor, origen, simbolo) {
@@ -47,6 +31,31 @@ class Monedas {
         this.simbolo = simbolo;
     }
 }
+/*---------------------------------------------*/
+/* CAMBIAR MODO NOCTURNO*/
+/*id="cambiar-fondo"*/
+
+const colorFondoButton = document.querySelector("#cambiar-fondo");
+const body = document.body;
+
+colorFondoButton.addEventListener("click", cambiaFondo);
+
+function cambiaFondo() {
+    body.classList.toggle("bg-dark");
+    body.classList.toggle("text-white");
+}
+//cambiar-fondo
+
+/*---------------------------------------------*/
+Swal.fire({
+    title: 'Bienvenido!',
+    text: 'Acepta aprobar esta entrega?',
+    confirmButtonText: 'Aceptar',
+    confirmButtonColor:'#3F72AF',
+    background:'#DBE2EF',
+    allowOutsideClick: false,
+    allowEscapeKey: false,
+});
 /*---------------------------------------------*/
 /*SELECCIONAR NACIONALIDAD*/
 let nacionalidad = [{
