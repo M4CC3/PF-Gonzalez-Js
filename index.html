@@ -10,20 +10,22 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </head>
+
 <body class="p-3 mb-2">
     <section class="position-relative">
-        <button id="cambiar-fondo" class="btn rounded position-absolute top-0 end-0 btn-outline-secondary">Modo</button>
+        <button id="cambiar-fondo"
+            class="btn rounded position-absolute top-0 end-0 btn-outline-secondary ">Oscuro</button>
     </section>
     <section class="p-5 mb-2 text-center">
         <h4>Cuantos dolares puedo comprar?</h4>
-        <form class="formulario">
-            <h6>Seleccione nacionalidad:</h6>
+        <form class="formulario ">
+            <h6 class="">Seleccione nacionalidad:</h6>
             <input type="radio" name="origen" id="one">Argentinx <br>
             <input type="radio" name="origen" id="two">Brasileñx <br>
             <input type="radio" name="origen" id="three">Uruguayx <br>
             <br>
             <h6>Cuantos pesos desea gastar?</h6>
-            <input type="number" id="valor" min="1" max="55500">
+            <input class="rounded-pill text-center" type="number" id="valor" min="1" max="55500">
             <br>
             <br>
             <p>Seleccionar moneda extranjera:</p>
@@ -34,8 +36,10 @@
             <input type="button" id="cotizador" value="Cotizar" onclick="convertir()">
         </form>
         <br>
-        <br>
-        <h5 id="devolucion"></h5>
+
+        <div>
+                <form class="border border-secondary rounded-pill d-inline-flex p-2 h5" id="devolucion"></form>
+        </div>
     </section>
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>

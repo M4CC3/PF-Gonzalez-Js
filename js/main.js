@@ -34,26 +34,26 @@ class Monedas {
 /*---------------------------------------------*/
 /* CAMBIAR MODO NOCTURNO*/
 /*id="cambiar-fondo"*/
-
 const colorFondoButton = document.querySelector("#cambiar-fondo");
 const body = document.body;
-
 colorFondoButton.addEventListener("click", cambiaFondo);
-
 function cambiaFondo() {
     body.classList.toggle("bg-dark");
     body.classList.toggle("text-white");
-
+    if (body.classList.contains("bg-dark")) {
+        colorFondoButton.innerText = "Claro";
+    }
+    else {
+        colorFondoButton.innerText = "Oscuro"
+    }
 }
-//cambiar-fondo
-
 /*---------------------------------------------*/
 Swal.fire({
     title: 'Bienvenido!',
     text: 'Acepta aprobar esta entrega?',
     confirmButtonText: 'Aceptar',
-    confirmButtonColor:'#3F72AF',
-    background:'#DBE2EF',
+    confirmButtonColor: '#3F72AF',
+    background: '#DBE2EF',
     allowOutsideClick: false,
     allowEscapeKey: false,
 });
