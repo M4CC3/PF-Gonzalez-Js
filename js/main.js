@@ -1,27 +1,4 @@
 /*---------------------------------------------*/
-///*PROMPT: SELECCION DE NACIONALIDAD*/
-//let nacionalidades = Number(prompt("Seleccione Nacionalidad: 1.Argentinx, - 2.//Brasilerx - 3.Uruguayx"));
-//switch (nacionalidades) {
-//    /*NACIONALIDAD ARGENTINA*/
-//    case 1:
-//        alert("Ha seleccionado la opcion para pagar mas impuestos");
-//        console.log("Es Argentinx");
-//        break;
-//    /*NACIONALIDAD BRASILEÑA*/
-//    case 2:
-//        alert("Parabéns, você não tem impostos");
-//        console.log("Es Brasileñx");
-//        break;
-//    /*NACIONALIDAD URUGUAYA*/
-//    case 3:
-//        alert("Felicitaciones Vo, no tenes tantos impuestos");
-//        console.log("Es Uruguayx");
-//        break;
-//    /*NO INGRESO NACIONALIDAD*/
-//    default:
-//        alert("me quede corto con los paises, perdon");
-//}
-/*---------------------------------------------*/
 /* CLASS CONSTRUCTOR*/
 class Monedas {
     constructor(nombre, valor, origen, simbolo) {
@@ -41,7 +18,7 @@ function cambiaFondo() {
     body.classList.toggle("bg-dark");
     body.classList.toggle("text-white");
     if (body.classList.contains("bg-dark")) {
-        colorFondoButton.innerText = "Claro";
+        colorFondoButton.innerText = "Claro ";
     }
     else {
         colorFondoButton.innerText = "Oscuro"
@@ -56,7 +33,7 @@ Swal.fire({
     background: '#DBE2EF',
     allowOutsideClick: false,
     allowEscapeKey: false,
-});
+})
 /*---------------------------------------------*/
 /*SELECCIONAR NACIONALIDAD*/
 let nacionalidad = [{
@@ -65,7 +42,18 @@ let nacionalidad = [{
     gentilicio: "Brasileñx", paisOrigen: "Brasil", idioma: "Portugues"
 }, {
     gentilicio: "Uruguayx", paisOrigen: "Uruguay", idioma: "Español"
-},]
+},
+]
+/*STORAGE + JSON*/
+const nacionalidadJSON = JSON.stringify(nacionalidad);
+localStorage.setItem("nacionalidad", nacionalidadJSON,);
+const nacionalidadEnLocalStorage = localStorage.getItem("nacionalidad");
+
+/*PARSE*/
+const nacionalidadParse = JSON.parse(nacionalidadEnLocalStorage);
+
+console.log(nacionalidadEnLocalStorage);
+console.log(nacionalidadParse);
 /*---------------------------------------------*/
 /*SELECCIONAR MONEDA*/
 let blues = [{
@@ -155,6 +143,9 @@ let convertir = function () {
     else {
         devolucion.innerText = ("Por favor, selecciona Nacionalidad y un tipo de cambio. ");
     }
+    /*---------------------------------------------*/
+    /*LOCAL STORAGE*/
+    localStorage.setItem("Pesos AR", moneda,);
+    localStorage.setItem("Resultado", resultado,);
 }
 /*---------------------------------------------*/
-
