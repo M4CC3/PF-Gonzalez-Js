@@ -25,15 +25,18 @@ function cambiaFondo() {
     }
 }
 /*---------------------------------------------*/
-Swal.fire({
-    title: 'Bienvenido!',
-    text: 'Acepta aprobar esta entrega?',
-    confirmButtonText: 'Aceptar',
-    confirmButtonColor: '#3F72AF',
-    background: '#DBE2EF',
-    allowOutsideClick: false,
-    allowEscapeKey: false,
-})
+setTimeout(() => {
+    Swal.fire({
+        title: 'Bienvenidx!',
+        text: 'Acepta aprobar esta entrega?',
+        confirmButtonText: 'Aceptar',
+        confirmButtonColor: '#3F72AF',
+        background: '#DBE2EF',
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+    })
+}, 1500);
+
 /*---------------------------------------------*/
 /*SELECCIONAR NACIONALIDAD*/
 let nacionalidad = [{
@@ -57,7 +60,7 @@ console.log(nacionalidadParse);
 /*---------------------------------------------*/
 /*SELECCIONAR MONEDA*/
 let blues = [{
-    nombreM: "Dolar Blue", valorM: 384
+    nombreM: "Dolar Blue", valorM: 378
 }, {
     nombreM: "Real Blue", valorM: 76
 }, {
