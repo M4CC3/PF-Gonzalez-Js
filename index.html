@@ -17,7 +17,7 @@
             class="btn rounded position-absolute top-0 end-0 btn-outline-secondary ">Oscuro</button>
     </section>
     <section class="p-5 mb-2 text-center ">
-        <hr><!------------MONEDA---------------->
+                <hr><!------------MONEDA---------------->
         <div class="d-flex justify-content-evenly">
             <h4>CAMBIO DE MONEDA EXTRANJERA</h4>
         </div>
@@ -33,30 +33,27 @@
             <h6>Cuantos pesos AR desea cambiar?</h6>
             <input class="rounded-pill text-center" type="number" id="valor" min="1" max="999">
         </div>
-        <hr><!---------INTERCAMBIO--------class="form-control"------>
+        <hr><!---------INTERCAMBIO-------------->
         <div>
             <h6>Seleccionar moneda extranjera:</h6>
             <div>
-            <input type="radio" name="cambio" id="uno">Dolar Blue <br>
-            <input type="radio" name="cambio" id="dos">Real blue <br>
-            <input type="radio" name="cambio" id="tres">Peso Uruguayo
-        </div>
-        <br>
-        <div>
-            <input type="button" class="btn btn-secondary " id="cotizador" value="Calcular" onclick="convertir()">
-        </div>
-        <br>
-        <div>
-            <form class="border border-secondary rounded-pill d-inline-flex p-2 h6" id="devolucion"></form>
-        </div>
-        <hr><!------------------------------>
-        <div class="h5">VALORES HOY:</div>
-        <hr><!------------------------------>
-        <div id="div-blues"class=""></div>
-        <hr><!------------------------------>
-        
+                <input type="radio" name="cambio" id="uno">Dolar Blue <br>
+                <input type="radio" name="cambio" id="dos">Real blue <br>
+                <input type="radio" name="cambio" id="tres">Blue Uruguayo
+            </div>
+            <br>
+            <div>
+                <input type="button" class="btn btn-secondary " id="cotizador" value="Calcular" onclick="convertir()">
+            </div>
+            <br>
+            <div>
+                <form class="border border-secondary rounded-pill d-inline-flex p-2 h6" id="devolucion"></form>
+            </div>
+            <hr><!------------------------------>
+            <div class="h5">VALORES HOY:</div>
+            <div id="div-blues" class="d-flex justify-content-evenly"></div>
+            <hr><!------------------------------>
     </section>
-
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/main.js"></script>
 </body>

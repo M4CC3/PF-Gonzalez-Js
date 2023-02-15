@@ -65,7 +65,7 @@ let blues = [{
 }, {
     nombreM: "Real Blue", valorM: 76
 }, {
-    nombreM: "Peso Uruguayo", valorM: 9
+    nombreM: "Blue Uruguayo", valorM: 9
 }];
 
 
