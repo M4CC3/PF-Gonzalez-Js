@@ -85,7 +85,7 @@ function mostrarBlues(array) {
     array.forEach(item => {
         const divX = document.createElement("div");
         divX.id = item.id;
-        divX.textContent = `${item.nombreM} = ${item.valorM}`
+        divX.textContent = `${item.nombreM} =   $${item.valorM}`
         lista.append(divX);
     })
 
